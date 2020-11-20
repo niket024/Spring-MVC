@@ -1,11 +1,13 @@
-package org.arpit.java2blog.service;
+package com.nik.service;
 
 import java.util.List;
-import org.arpit.java2blog.dao.CountryDAO;
-import org.arpit.java2blog.model.Country;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.nik.dao.CountryDAO;
+import com.nik.model.Country;
 
 @Service("countryService")
 public class CountryService {

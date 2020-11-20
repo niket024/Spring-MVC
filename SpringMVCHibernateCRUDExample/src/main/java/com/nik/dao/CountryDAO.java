@@ -1,12 +1,13 @@
-package org.arpit.java2blog.dao;
+package com.nik.dao;
 
 import java.util.List;
 
-import org.arpit.java2blog.model.Country;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import com.nik.model.Country;
 
 @Repository
 public class CountryDAO {

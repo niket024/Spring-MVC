@@ -1,4 +1,4 @@
-package org.arpit.java2blog.model;
+package com.nik.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,46 +11,53 @@ import javax.persistence.Table;
  * This is our model class and it corresponds to Country table in database
  */
 @Entity
-@Table(name="COUNTRY")
-public class Country{
-	
+@Table(name = "COUNTRY")
+public class Country {
+
 	@Id
-	@Column(name="id")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int id;
-	
-	@Column(name="countryName")
-	String countryName;	
-	
-	@Column(name="population")
+
+	@Column(name = "countryName")
+	String countryName;
+
+	@Column(name = "population")
 	long population;
-	
+
 	public Country() {
 		super();
 	}
-	public Country(int i, String countryName,long population) {
+
+	public Country(int i, String countryName, long population) {
 		super();
 		this.id = i;
 		this.countryName = countryName;
-		this.population=population;
+		this.population = population;
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getCountryName() {
 		return countryName;
 	}
+
 	public void setCountryName(String countryName) {
 		this.countryName = countryName;
 	}
+
 	public long getPopulation() {
 		return population;
 	}
+
 	public void setPopulation(long population) {
 		this.population = population;
-	}	
-	
+	}
+
 }

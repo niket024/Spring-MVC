@@ -1,18 +1,18 @@
-package org.arpit.java2blog.controller;
+package com.nik.controller;
 
 
 import java.util.List;
 
-import org.arpit.java2blog.model.Country;
-import org.arpit.java2blog.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.nik.model.Country;
+import com.nik.service.CountryService;
 
 @Controller
 public class CountryController {
