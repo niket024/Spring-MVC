@@ -1,0 +1,36 @@
+table:
+CREATE TABLE STUDENT
+  (
+    STUDENTID NUMBER NOT NULL ,
+    FIRSTNAME VARCHAR2(20 BYTE) ,
+    LASTNAME  VARCHAR2(20 BYTE) ,
+    YEARLEVEL NUMBER ,
+    CONSTRAINT STUDENT_PK PRIMARY KEY ( STUDENTID ) ENABLE
+  )
+sequence:
+CREATE SEQUENCE TAB_STUDENT_SEQ
+START WITH 1
+MAXVALUE 999999999999999999999999999
+MINVALUE 1
+NOCYCLE
+CACHE 20
+NOORDER;
+
+
+homme.jsp
+--------------
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="steelblue">
+	<center>
+	<h1>*****Welcome to CRUD development*****</h1>
+	<a href="index" style='color: yellow;font-size: larger;'>Start</a>
+	</center>
+</body>
+</html>
